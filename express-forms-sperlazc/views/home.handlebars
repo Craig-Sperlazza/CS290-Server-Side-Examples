@@ -10,3 +10,30 @@
     <li>{{this.name}}: {{this.value}}
         {{/each}}
 </ul>
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    {{#each queryList}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    {{#each bodyList}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+    </tr>
+        {{/each}}
+</table>
