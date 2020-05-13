@@ -34,27 +34,31 @@ app.set('port', 56458);
 // });
 
 app.get('/', function(req, res) {
-	var qParams = [];
+	var queryParams = [];
 	for (var p in req.query) {
-		qParams.push({ name: p, value: req.query[p] });
+		queryParams.push({ name: p, value: req.query[p] });
 	}
+	console.log(queryParams);
+	console.log(req.query);
 	var context = {};
 	context.request = 'GET';
-	context.queryList = qParams;
+	context.queryList = queryParams;
 	res.render('home', context);
 });
 
 app.post('/', function(req, res) {
 	var queryParams = [];
 	var bodyData = [];
-	for (var b in req.body) {
-		bodyData.push({ name: b, value: req.body[b] });
+	for (var p in req.body) {
+		bodyData.push({ name: p, value: req.body[p] });
 	}
 	for (var q in req.query) {
 		queryParams.push({ name: q, value: req.query[q] });
 	}
-	// console.log(qParams);
-	// console.log(req.body);
+	console.log(queryParams);
+	console.log(req.query);
+	console.log(bodyData);
+	console.log(req.body);
 	var context = {};
 	context.queryList = queryParams;
 	context.request = 'POST';
