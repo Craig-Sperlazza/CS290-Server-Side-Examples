@@ -1,18 +1,20 @@
 <h1>{{request}} Request Received</h1>
+<h3>List view of Query Data</h3>
 <ul>
     {{#each queryList}}
     <li>{{this.name}}: {{this.value}}
         {{/each}}
 </ul>
 
+<h3>List view of Body Data</h3>
 <ul>
     {{#each bodyList}}
     <li>{{this.name}}: {{this.value}}
         {{/each}}
 </ul>
 
-
-<table>
+<h3>Table view of Query Data</h3>
+<table border=1px, solid, black>
     <tr>
         <th>Name</th>
         <th>Value</th>
@@ -25,7 +27,8 @@
     {{/each}}
 </table>
 
-<table>
+<h3>Table view of Body Data</h3>
+<table border=1px, solid, black>
     <tr>
         <th>Name</th>
         <th>Value</th>
