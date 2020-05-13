@@ -19,12 +19,13 @@
         <th>Name</th>
         <th>Value</th>
     </tr>
-    {{#each queryList}}
+    
     <tr>
+        {{#each queryList}}
         <td>{{this.name}}</td>
         <td>{{this.value}}</td>
+        {{/each}}
     </tr>
-    {{/each}}
 </table>
 
 <h3>Table view of Body Data</h3>
