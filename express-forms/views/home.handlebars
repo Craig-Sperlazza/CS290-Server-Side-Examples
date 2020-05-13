@@ -1,1 +1,12 @@
-<h1>The Home Page</h1>
+<h1>{{request}} Request Received</h1>
+<ul>
+    {{#each queryList}}
+    <li>{{this.name}}: {{this.value}}
+        {{/each}}
+</ul>
+
+<ul>
+    {{#each bodyList}}
+    <li>{{this.name}}: {{this.value}}
+        {{/each}}
+</ul>
