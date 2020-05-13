@@ -16,23 +16,20 @@
 <h3>Table view of Query Data</h3>
 <table border=1px, solid, black>
     <tr>
-        <th>Name</th>
-        <th>Value</th>
+        <th>Name:Value Pair</th>
     </tr>
-    
+    {{#each queryList}}
     <tr>
-        {{#each queryList}}
         <td>{{this.name}}</td>
         <td>{{this.value}}</td>
-        {{/each}}
     </tr>
+        {{/each}}
 </table>
 
 <h3>Table view of Body Data</h3>
 <table border=1px, solid, black>
     <tr>
-        <th>Name</th>
-        <th>Value</th>
+        <th>Name:Value Pair</th>
     </tr>
     {{#each bodyList}}
     <tr>
