@@ -13,7 +13,7 @@
         {{/each}}
 </ul>
 
-<h3>Table view of Query Data 1</h3>
+<h3>Table view of Query Data</h3>
 <table border=1px, solid, black>
     <tr>
         <th>Name</th>
@@ -27,37 +27,17 @@
         {{/each}}
 </table>
 
-<h3>Table view of Query Data 2</h3>
-<table border=1px, solid, black>
-    {{#each queryList}}
-        <tr>
-            <td>{{this.name}}</td>
-            <td>{{this.value}}</td>
-        </tr>
-    {{/each}}
-</table>
-
-<h3>Table view of Query Data 3</h3>
-<table border=1px, solid, black>
-    <tr>
-        <th>Name:Value</th>
-    </tr>
-    {{#each queryList}}
-    <tr>
-        <td>{{this.name}}: {{this.value}}</td>
-    </tr>
-    {{/each}}
-</table>
-
 
 <h3>Table view of Body Data</h3>
 <table border=1px, solid, black>
     <tr>
-        <th>Name:Value Pair</th>
+        <th>Name</th>
+        <th>Value</th>
     </tr>
-    {{#each queryList}}
+    {{#each bodyList}}
     <tr>
-        <td>{{this.name}}: {{this.value}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
     </tr>
     {{/each}}
 
