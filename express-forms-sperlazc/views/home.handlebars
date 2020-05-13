@@ -20,8 +20,7 @@
     </tr>
     {{#each queryList}}
     <tr>
-        <td>{{this.name}}</td>
-        <td>{{this.value}}</td>
+        <td>{{this.name}}: {{this.value}}</td>
     </tr>
         {{/each}}
 </table>
@@ -31,10 +30,10 @@
     <tr>
         <th>Name:Value Pair</th>
     </tr>
-    {{#each bodyList}}
+    {{#each queryList}}
     <tr>
-        <td>{{this.name}}</td>
-        <td>{{this.value}}</td>
+        <td>{{this.name}}: {{this.value}}</td>
     </tr>
-        {{/each}}
+    {{/each}}
+
 </table>
